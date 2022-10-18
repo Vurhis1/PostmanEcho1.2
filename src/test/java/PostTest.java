@@ -19,7 +19,7 @@ public class PostTest {
               .post("/post")
               .then()
               .statusCode(200)
-              .body("balance".);
+              .body("data", equalTo("some data"));
 
 }
 }
